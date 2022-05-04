@@ -2,32 +2,41 @@
     border: 0;
     margin: 0;
     padding: 0;
+
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: #6FA6E8;
 }
 
 header{
     position: fixed;
+}
+
+#headerbox{
+    background: #000000;
+    border-radius: 0px 0px 30px 30px;
+    
     width: 100vw;
     height: 63px;
-    left: 0px;
-    top: 0px;
 
-    background: #000000;
-    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 #about{
-    position: absolute;
-    width: 62px;
-    height: 27px;
-    left: 642px;
-    top: 18px;
-
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -36,17 +45,15 @@ header{
 
 
     color: #F9F9F9;
+}
+
+#about:hover{
+    color: rgb(223, 223, 223);
 }
 
 #projects{
     /* Projetos */
-    position: absolute;
-    width: 86px;
-    height: 27px;
-    left: 738px;
-    top: 18px;
 
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -57,34 +64,46 @@ header{
     color: #F9F9F9;
 }
 
-#elipse{
-    /* Ellipse 1 */
-    position: fixed;
-    width: 1086px;
-    height: 1126px;
-    left: 811px;
-    top: -420px;
-    z-index: -1;
+#projects:hover{
+    color: rgb(223, 223, 223);
 }
 
-#name{
-    position: absolute;
-    width: 433px;
-    height: 114px;
-    left: 985px;
-    top: 526px;
+#profile{
+    height: 100vh;
+    width: 100vw;
+}
 
-    font-family: Jockey One;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 57px;
-    letter-spacing: 0em;
-    text-align: right;
+#academic-section{
+    /* Formação e Experiência */
+    background: white;
 
-    box-shadow: -3px 5px 0px 0px #ABD2FF;
-    color: black;
+    padding-top: 30px;
+    height: 100vh;
+    width: 100vw;
+    justify-content: normal;
+    flex-direction: column;
+}
+
+
+
+.content{
+    background-color: #EBE7E7;
+
+    height: 100%;
+    border-radius: 50px 50px 0 0 ;
+    width: 50%;
+    align-items: normal;
+    padding-top: 10px;
 }
 
 a{
     text-decoration: none;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 25px;
 }
