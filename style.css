@@ -71,6 +71,15 @@ header{
 #profile{
     height: 100vh;
     width: 100vw;
+
+    flex-direction: column;
+}
+
+#profile-photo{
+    width: 200px;
+    border-radius: 50%;
+
+    border: 5px solid #062447;
 }
 
 #academic-section{
