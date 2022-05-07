@@ -65,17 +65,52 @@ header{
     border: 5px solid #062447;
 }
 
-#headerbox{
-    background: #000000;
-    border-radius: 0px 0px 30px 30px;
-    
+#headerbox{    
     width: 100vw;
     height: 63px;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 40px;
+}
+
+#headerbox > button{
+    background: none;
+    color: #062447;
+
+    font-size: 30px;
+    margin-right: 40px;
+
+    cursor: pointer;
+}
+
+#menu{
+    width: 40vw;
+    height: 100vh;
+    position: fixed;
+    top: -70vh;
+    right: -60vw;
+}
+
+#menu-content{
+    background: white;
+    flex-direction: column;
+}
+
+#menu-content > a{
+    width: 100%;
+    text-align: center;
+    
+    color: #062447;
+    font-size: 20px;
+
+    border-bottom: 1px solid rgb(209, 209, 209);
+    padding: 20px 0px;
+}
+
+#menu > a:hover{
+    background-color: #f7f7f7;
 }
 
 #about{
@@ -170,4 +205,16 @@ h1{
 
 p{
     font-size: 25px;
+}
+
+#footer{
+    background-color: #062447;
+    height: 20vh;
+    width: 100%;
+    gap: 70px;
+}
+
+footer > a{
+    color: white;
+    font-size: 30px;
 }
