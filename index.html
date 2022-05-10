@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
         <script src="https://kit.fontawesome.com/6e3c48c7e9.js" crossorigin="anonymous"></script>
         <title>Portifolio</title>
 
@@ -15,13 +16,13 @@
     <body>
         <header>
             <div id="headerbox">
-                <button id="menu-btn">
+                <button id="menu-btn" onclick="toggleMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </header>
 
-        <section id="menu">
+        <section id="menu" class="closed">
             <div id="menu-content" class="flex">
                 <a href="" class="menu-link">Sobre</a>
                 <a href="" class="menu-link">Formação</a>
@@ -42,11 +43,21 @@
                 <h1>Formação e experiência</h1>
             </div>
             <div class="content flex">
-                <div id="place">
-                    Uniceub
+                <div id="place" class="flex">
+                    <h2>Uniceub</h2>
+                    <h3>Fev. 2020 - Dez. 2023</h3>
                 </div>
-                <div id="experience">
-                    Graduação em Ciência da Computação
+                <div id="experience" class="flex">
+                    <p>Graduação em Ciência da Computação</p>
+                </div>
+            </div>
+            <div class="content flex">
+                <div id="place" class="flex">
+                    <h2>Uniceub</h2>
+                    <h3>Fev. 2020 - Dez. 2023</h3>
+                </div>
+                <div id="experience" class="flex">
+                    <p>Graduação em Ciência da Computação</p>
                 </div>
             </div>
         </section>

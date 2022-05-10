@@ -87,12 +87,15 @@ header{
 }
 
 #menu{
-    display: none;
     width: 30vw;
     height: 100vh;
     position: fixed;
     top: 0vh;
     right: 0vw;
+}
+
+.closed{
+    display: none;
 }
 
 #menu-content{
@@ -170,6 +173,19 @@ header{
     border-bottom: 1px solid rgb(90, 90, 90);
 }
 
+#place{
+    border-right: 1px solid black;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#experience{
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+}
+
 #skills{
     /* Formação e Experiência */
     background: #6FA6E8;
@@ -192,18 +208,17 @@ header{
 }
 
 .content{
-    height: 100%;
-    width: 80%;
+    /* height: 100%; */
+    width:80%;
     align-items: center;
     flex-direction: row;
     text-align: center;
-    margin-bottom: 50px;
-
-    gap: 5px;
+    padding: 20px;
+    justify-content: space-evenly;
 }
 
 .content > p{
-    width: 600px;
+    width: 100%;
 }
 
 a{
@@ -214,8 +229,17 @@ h1{
     font-size: 40px;
 }
 
+h2{
+    font-size: 27px;
+    color: #062447;
+}
+
+h3{
+    color: #58636e;
+}
+
 p{
-    font-size: 25px;
+    font-size: 23px;
 }
 
 #footer{
