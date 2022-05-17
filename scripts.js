@@ -1,12 +1,10 @@
-const menu = document.getElementById('menu')
-console.log(menu)
+const menuElement = document.getElementById('menu')
+console.log(menuElement)
 
 function toggleMenu(){
-    if (menu.classList.contains("closed") == true){
-        menu.classList.remove("closed")
-        console.log('teste')
+    if (menuElement.classList.contains("closed") === true){
+        menuElement.classList.remove("closed")
     } else{
-        menu.classList.add("closed")
+        menuElement.classList.add("closed")
     }
-
 }
