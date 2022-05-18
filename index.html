@@ -12,7 +12,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Raleway:wght@300&display=swap');
         </style>
     </head>
-    <body>
+    <body onclick="func(event)">
         <header>
             <div id="headerbox">
                 <button id="menu-btn" onclick="toggleMenu()">
@@ -24,8 +24,7 @@
         <section id="menu" class="closed">
             <div id="menu-content" class="flex">
                 <a href="" class="menu-link">Sobre</a>
-                <a href="" class="menu-link">Formação</a>
-                <a href="" class="menu-link">Experiência</a>
+                <a href="" class="menu-link">Formação e experiência</a>
                 <a href="" class="menu-link">Projetos</a>
             </div>
         </section>
@@ -38,7 +37,7 @@
         </section>
 
         <section id="academic-section" class="flex">
-            <div id="title" class="flex">
+            <div class="flex title">
                 <h1>Formação e experiência</h1>
             </div>
             <div class="content flex">
@@ -62,14 +61,53 @@
         </section>
 
         <section id="skills" class="flex">
-            <h1>Skills</h1>
+            <div class="flex title">
+                <h1>Ferramentas e linguagens</h1>
+            </div>
             <div class="content flex">
-                <span class="item">
-                    <p>Python</p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                </span>
+                <div id="tools-text-container" class="flex">
+                    <p>Aqui estão as ferramentas e linguagens de programação que possuo conhecimento.</p>
+                </div>
+                <div id="tools-logo-container" class="flex">
+                    <div id="logos" class="flex">
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                        <span class="item">
+                            <img src="assets/linux.png" alt="Linux logo">
+                        </span>
+                    </div>
+                </div>
             </div>
         </section>
 

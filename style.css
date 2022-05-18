@@ -162,7 +162,7 @@ header{
     flex-direction: column;
 }
 
-#title{
+.title{
     margin-left: 30px;
     color: #000000;
     flex-direction: row;
@@ -186,15 +186,45 @@ header{
 }
 
 #skills{
-    /* Formação e Experiência */
     background: #6FA6E8;
 
     padding-top: 30px;
     height: 450px;
     width: 100%;
     flex-direction: column;
+
+    gap: 5px;
 }
 
+#skills .title{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+#tools-text-container{
+    border-right: 1px solid #000000;
+    width: 100%;
+}
+#tools-text-container p{
+    width: 80%;
+}
+
+#tools-text-container h1{
+    margin-bottom: 30px;
+}
+
+#logos{
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 80%;
+}
+
+#tools-logo-container{
+    width: 100%;
+}
+
+#tools-logo-container img{
+    width: 75px;
+}
 
 .fa-star{
     color: #062447;
