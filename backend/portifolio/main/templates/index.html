@@ -1,0 +1,128 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <script src="https://kit.fontawesome.com/6e3c48c7e9.js" crossorigin="anonymous"></script>
+        <title>Portifolio</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Raleway:wght@300&display=swap');
+        </style>
+    </head>
+    <body onclick="func(event)">
+        <header>
+            <div id="headerbox">
+                <button id="menu-btn" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <section id="menu" class="closed">
+            <div id="menu-content" class="flex">
+                <a href="" class="menu-link">Sobre</a>
+                <a href="" class="menu-link">Formação</a>
+                <a href="" class="menu-link">Experiência</a>
+                <a href="" class="menu-link">Projetos</a>
+            </div>
+        </section>
+        
+        <section id="profile" class="flex">
+            <img src="{% static 'assets/Photo.png' %}" alt="Profile photo" id="profile-photo">
+            <p id="welcome">Bem-vindo ao meu portifólio!<br></p>
+            <p>Me chamo Gabriel de Oliveira e nesse site eu falo sobre mim, minha formação, experiência no ramo e projetos pessoais!</p>  
+        </section>
+
+        <section id="experience-section" class="container flex">
+            <div class="flex title">
+                <h1>Experiência</h1>
+            </div>
+            {% for experience in experiences %}
+            <div class="content flex">
+                <div id="place" class="content-left flex">
+                    <h2>{{experience.company}}</h2>
+                    <h3>{{experience.start_date}} {% if experience.end_date == Null %}  -  Até o momento {% else %} || {{ experience.end_date }} {% endif %}</h3>
+                </div>
+                <div id="experience" class="content-right flex">
+                    <p>{{ experience.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+
+        <section id="academic-section" class="container flex">
+            <div class="flex title">
+                <h1>Formação</h1>
+            </div>
+            {% for academic in academics %}
+            <div class="content flex">
+                <div id="place" class="content-left flex">
+                    <h2>{{academic.institution}}</h2>
+                    <h3>{{academic.start_date}} {% if academic.end_date == Null %}  -  Até o momento {% else %} || {{ academic.end_date }} {% endif %}</h3>
+                </div>
+                <div id="experience" class="content-right flex">
+                    <p>{{academic.description}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+
+        <section id="skills" class="flex">
+            <div class="flex title">
+                <h1>Ferramentas e linguagens</h1>
+            </div>
+            <div class="content flex">
+                <div id="tools-text-container" class="flex">
+                    <p>Aqui estão as ferramentas e linguagens de programação que possuo conhecimento.</p>
+                </div>
+                <div id="tools-logo-container" class="flex">
+                    <div id="logos" class="flex">
+                        {% for tool in tools %}
+                        <span class="item">
+                            <img src="/media/{{tool.logo}}" alt="{{tool.name}}" title="{{tool.name}}">
+                        </span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects-section" class="container flex">
+            <div class="flex title">
+                <h1>Projetos</h1>
+            </div>
+            {% for project in projects %}
+            <div class="content flex">
+                <div class="content-left flex">
+                    <h2>{{project.name}}</h2>
+                    <h3>{{project.description}}</h3>
+                </div>
+                <div  class="content-right flex">
+                    <img class="project-img" src="/media/{{project.photo}}" alt="">
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+
+        <footer class="flex" id="footer">
+            <a href="https://www.instagram.com/bielzz_oliver/" id="insta" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/gabriel-oliveira-4bb406190/" id="linkedin" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            
+            <a href="https://github.com/OliverBiel" id="github" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </footer>
+    </body>
+    
+    <script src="{% static 'scripts.js' %}"></script>
+</html>

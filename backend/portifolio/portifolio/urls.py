@@ -8,6 +8,7 @@ from experiences.api.viewsets import ExperienceViewSet
 from academics.api.viewsets import AcademicViewSet
 from tools.api.viewsets import ToolViewSet
 from projects.api.viewsets import ProjectViewSet
+from main import views
 
 
 router = routers.DefaultRouter()
@@ -18,5 +19,5 @@ router.register(r'projects', ProjectViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls))
+    path('', views.Index.as_view(), name='index')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
