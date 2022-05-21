@@ -102,7 +102,7 @@ header{
     box-shadow: -3px 4px 15px -6px rgba(0,0,0,0.65);
 }
 
-#menu-content > a{
+.menu-link{
     width: 100%;
     text-align: center;
     
@@ -115,6 +115,14 @@ header{
 
 #menu-content > a:hover{
     background-color: #d8d8d8;
+}
+
+#close-btn i{
+    font-size: 25px;
+}
+
+#close-btn{
+    border-bottom: 0px;
 }
 
 #about{
@@ -285,4 +293,44 @@ footer a:hover{
 
 .closed{
     display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .project-img{
+        width: 300px;
+    }
+
+    #projects-section .content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #projects-section .content{
+        flex-direction: column;
+    }
+
+    .content-left{
+        border: 0;
+    }
+
+    #tools-logo-container img{
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 699px){
+    #profile > p{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #menu{
+        width: 100%;
+    }
+    
+    #menu-content{
+        width: 100%;
+    }
 }
