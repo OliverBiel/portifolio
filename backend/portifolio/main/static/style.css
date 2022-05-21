@@ -140,8 +140,12 @@ header{
     gap: 20px;
 }
 
+#projects-section .content{
+    margin-bottom: 20px;
+}
+
 .project-img{
-    width: 700px;
+    width: 500px;
     box-shadow: 1px 1px 20px -1px rgba(0,0,0,0.1);
 }
 

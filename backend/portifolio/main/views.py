@@ -14,4 +14,5 @@ class Index(View):
         academics = Academic.objects.all()
         projects = Project.objects.all()
         tools = Tool.objects.all()
+
         return render(request, self.template, {'academics': academics, 'experiences': experiences, 'projects': projects, 'tools': tools})

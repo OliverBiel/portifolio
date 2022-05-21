@@ -98,6 +98,8 @@
                 <h1>Projetos</h1>
             </div>
             {% for project in projects %}
+            {% cycle 'right' 'left' as side silent %}
+            {% if side == 'right' %}
             <div class="content flex">
                 <div class="content-left flex">
                     <h2>{{project.name}}</h2>
@@ -107,6 +109,18 @@
                     <img class="project-img" src="/media/{{project.photo}}" alt="">
                 </div>
             </div>
+            {% else %}
+            <div class="content flex">
+                <div  class="content-left flex">
+                    <img class="project-img" src="/media/{{project.photo}}" alt="">
+                </div>
+                <div class="content-right flex">
+                    <h2>{{project.name}}</h2>
+                    <h3>{{project.description}}</h3>
+                </div>
+            </div>
+
+            {% endif %}           
             {% endfor %}
         </section>
 
