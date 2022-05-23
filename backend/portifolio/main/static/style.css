@@ -125,22 +125,35 @@ header{
     border-bottom: 0px;
 }
 
-#about{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 27px;
-    /* identical to box height */
-    
-    color: #F9F9F9;
+#about-me .content{
+    gap: 20px;
+}
+
+#about-me .title{
+    justify-content: space-between;
+}
+
+#about-me button{
+    padding: 10px 20px;
+    background-color: #6FA6E8;
+    border: 1px solid #062447;
+    cursor: pointer;
+    color: black;
+}
+
+#about-me button:hover{
+    transition: 0.2s;
+    background-color: #062447;
+    border: 1px solid #6FA6E8;
+    color: white;
+}
+
+#about-me .content-right{
+    width: 20%;
 }
 
 #experience p{
     max-width: 90%;
-}
-
-#about:hover{
-    color: rgb(223, 223, 223);
 }
 
 #projects-section{
