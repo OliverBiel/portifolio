@@ -9,6 +9,7 @@ class Academic(models.Model):
 
     class Meta:
         db_table = 'academic'
+        ordering = ('start_date',)
 
     def __str__(self):
         return self.institution
