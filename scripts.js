@@ -19,3 +19,17 @@ function func(e){
         toggleMenu()
     }
 }
+
+
+function changeContent(e){
+    const altura = window.screen.height;
+    const largura = window.screen.width;
+
+    const contentAlternate = document.querySelector(".alternate");
+    const contentFixed = document.querySelector('.fixed')
+
+    if (largura <= 1024){
+        contentFixed.classList.remove('closed')
+        contentAlternate.classList.add('closed')
+    }
+}

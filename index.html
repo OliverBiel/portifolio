@@ -14,7 +14,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Raleway:wght@300&display=swap');
         </style>
     </head>
-    <body onclick="func(event)">
+    <body onclick="func(event)" onload="changeContent(event)">
         <header>
             <div id="headerbox" class="flex">
                 <button id="menu-btn" onclick="toggleMenu()">
@@ -172,82 +172,127 @@
                 <h1>Projetos</h1>
             </div>
             
-            
-            
-            <div class="content flex">
-                <div class="content-left flex">
-                    <h2>API em Django - PDAD</h2>
-                    <h3>Uma API feita em Django para fazer a busca de pesquisadores oficiais da PDAD 2021. Em HTML, CSS, JS e Django</h3>
+            <div class="switch container flex alternate">
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <h2>API em Django - PDAD</h2>
+                        <h3>Uma API feita em Django para fazer a busca de pesquisadores oficiais da PDAD 2021. Em HTML, CSS, JS e Django</h3>
+                    </div>
+                    <div  class="content-right flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_PDAD_pesquisador_xP6QeJ5.jpg" alt="">
+                    </div>
                 </div>
-                <div  class="content-right flex">
-                    <img class="project-img" src="assets/projects/Projeto_-_PDAD_pesquisador_xP6QeJ5.jpg" alt="">
+    
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_Frontend_Mentor_2_OAuwPRe.png" alt="">
+                    </div>
+                    <div class="content-right flex">
+                        <h2>Desafio do Frontend Mentor</h2>
+                        <h3>Esse é um dos desafios propostos no site Frontend Mentor, feito com HTML e CSS.</h3>
+                    </div>
                 </div>
-            </div>
-                       
-            
-            
-            
-            <div class="content flex">
-                <div class="content-left flex">
-                    <img class="project-img" src="assets/projects/Projeto_-_Frontend_Mentor_2_OAuwPRe.png" alt="">
+       
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <h2>Desafio do Frontend Mentor</h2>
+                        <h3>Esse é um dos desafios propostos no site Frontend Mentor, feito com HTML e CSS.</h3>
+                    </div>
+                    <div  class="content-right flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_Frontend_Mentor_1_Em4T6DI.png" alt="">
+                    </div>
                 </div>
-                <div class="content-right flex">
-                    <h2>Desafio do Frontend Mentor</h2>
-                    <h3>Esse é um dos desafios propostos no site Frontend Mentor, feito com HTML e CSS.</h3>
+    
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_Tela_de_Login_2_3X44LW2.png" alt="">
+                    </div>
+                    <div class="content-right flex">
+                        <h2>Tela de Login</h2>
+                        <h3>Essa é uma simples tela de login utilizando HTML, CSS e JS.</h3>
+                    </div>
+                </div>
+                
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <h2>Tela de Cadastro</h2>
+                        <h3>Essa é uma tela de cadastro utilizando HTML, CSS e JS.</h3>
+                    </div>
+                    <div  class="content-right flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_Tela_de_Login_HZNKcmD.png" alt="">
+                    </div>
+                </div>
+                           
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_Discover_5hMlocM.png" alt="">
+                    </div>
+                    <div class="content-right flex">
+                        <h2>Maratona Discover</h2>
+                        <h3>Esse projeto foi feito a partir da Maratona Discover, é uma aplicação para controle financeiro utilizando HTML, CSS e JS.</h3>
+                    </div>
                 </div>
             </div>
 
-                       
-            
-            
-            
-            <div class="content flex">
-                <div class="content-left flex">
-                    <h2>Desafio do Frontend Mentor</h2>
-                    <h3>Esse é um dos desafios propostos no site Frontend Mentor, feito com HTML e CSS.</h3>
+            <div class="switch container flex fixed closed">
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <h2>API em Django - PDAD</h2>
+                        <h3>Uma API feita em Django para fazer a busca de pesquisadores oficiais da PDAD 2021. Em HTML, CSS, JS e Django</h3>
+                    </div>
+                    <div  class="content-right flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_PDAD_pesquisador_xP6QeJ5.jpg" alt="">
+                    </div>
                 </div>
-                <div  class="content-right flex">
-                    <img class="project-img" src="assets/projects/Projeto_-_Frontend_Mentor_1_Em4T6DI.png" alt="">
+    
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <h2>Desafio do Frontend Mentor</h2>
+                        <h3>Esse é um dos desafios propostos no site Frontend Mentor, feito com HTML e CSS.</h3>
+                    </div>
+                    <div class="content-right flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_Frontend_Mentor_2_OAuwPRe.png" alt="">
+                    </div>
                 </div>
-            </div>
-                       
-            
-            
-            
-            <div class="content flex">
-                <div class="content-left flex">
-                    <img class="project-img" src="assets/projects/Projeto_-_Tela_de_Login_2_3X44LW2.png" alt="">
+       
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <h2>Desafio do Frontend Mentor</h2>
+                        <h3>Esse é um dos desafios propostos no site Frontend Mentor, feito com HTML e CSS.</h3>
+                    </div>
+                    <div  class="content-right flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_Frontend_Mentor_1_Em4T6DI.png" alt="">
+                    </div>
                 </div>
-                <div class="content-right flex">
-                    <h2>Tela de Login</h2>
-                    <h3>Essa é uma simples tela de login utilizando HTML, CSS e JS.</h3>
+    
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <h2>Tela de Login</h2>
+                        <h3>Essa é uma simples tela de login utilizando HTML, CSS e JS.</h3>
+                    </div>
+                    <div class="content-right flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_Tela_de_Login_2_3X44LW2.png" alt="">
+                    </div>
                 </div>
-            </div>
-
-                       
-            
-            
-            
-            <div class="content flex">
-                <div class="content-left flex">
-                    <h2>Tela de Cadastro</h2>
-                    <h3>Essa é uma tela de cadastro utilizando HTML, CSS e JS.</h3>
+                
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <h2>Tela de Cadastro</h2>
+                        <h3>Essa é uma tela de cadastro utilizando HTML, CSS e JS.</h3>
+                    </div>
+                    <div  class="content-right flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_Tela_de_Login_HZNKcmD.png" alt="">
+                    </div>
                 </div>
-                <div  class="content-right flex">
-                    <img class="project-img" src="assets/projects/Projeto_-_Tela_de_Login_HZNKcmD.png" alt="">
-                </div>
-            </div>
-                       
-            
-            
-            
-            <div class="content flex">
-                <div class="content-left flex">
-                    <img class="project-img" src="assets/projects/Projeto_-_Discover_5hMlocM.png" alt="">
-                </div>
-                <div class="content-right flex">
-                    <h2>Maratona Discover</h2>
-                    <h3>Esse projeto foi feito a partir da Maratona Discover, é uma aplicação para controle financeiro utilizando HTML, CSS e JS.</h3>
+                           
+                <div class="content flex">
+                    <div class="content-left flex">
+                        <h2>Maratona Discover</h2>
+                        <h3>Esse projeto foi feito a partir da Maratona Discover, é uma aplicação para controle financeiro utilizando HTML, CSS e JS.</h3>
+                    </div>
+                    <div class="content-right flex">
+                        <img class="project-img" src="assets/projects/Projeto_-_Discover_5hMlocM.png" alt="">
+                    </div>
                 </div>
             </div>
 
